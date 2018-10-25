@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/QRCoderReaderTest/qrcodereader/build/index.html/precache-manifest.050abfbd2702da4876abf46887393573.js"
+  "/byQrCode/precache-manifest.91db04563e40fe65b59c717a9cd492f4.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/QRCoderReaderTest/qrcodereader/build/index.html/index.html", {
+workbox.routing.registerNavigationRoute("/byQrCode/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
