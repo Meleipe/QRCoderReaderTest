@@ -1,14 +1,14 @@
 {
-  "main.css": "/byQrCode/static/css/main.e83e23b9.chunk.css",
-  "main.js": "/byQrCode/static/js/main.5da2aefd.chunk.js",
-  "main.js.map": "/byQrCode/static/js/main.5da2aefd.chunk.js.map",
-  "static/js/1.2cc4c9f6.chunk.js": "/byQrCode/static/js/1.2cc4c9f6.chunk.js",
-  "static/js/1.2cc4c9f6.chunk.js.map": "/byQrCode/static/js/1.2cc4c9f6.chunk.js.map",
-  "runtime~main.js": "/byQrCode/static/js/runtime~main.241924e6.js",
-  "runtime~main.js.map": "/byQrCode/static/js/runtime~main.241924e6.js.map",
-  "static/media/logo.svg": "/byQrCode/static/media/logo.5d5d9eef.svg",
-  "static/css/main.e83e23b9.chunk.css.map": "/byQrCode/static/css/main.e83e23b9.chunk.css.map",
-  "index.html": "/byQrCode/index.html",
-  "precache-manifest.91db04563e40fe65b59c717a9cd492f4.js": "/byQrCode/precache-manifest.91db04563e40fe65b59c717a9cd492f4.js",
-  "service-worker.js": "/byQrCode/service-worker.js"
+  "main.css": "/QRCoderReaderTest/qrcodereader/build/index.html/static/css/main.e83e23b9.chunk.css",
+  "main.js": "/QRCoderReaderTest/qrcodereader/build/index.html/static/js/main.2dc005b8.chunk.js",
+  "main.js.map": "/QRCoderReaderTest/qrcodereader/build/index.html/static/js/main.2dc005b8.chunk.js.map",
+  "static/js/1.2cc4c9f6.chunk.js": "/QRCoderReaderTest/qrcodereader/build/index.html/static/js/1.2cc4c9f6.chunk.js",
+  "static/js/1.2cc4c9f6.chunk.js.map": "/QRCoderReaderTest/qrcodereader/build/index.html/static/js/1.2cc4c9f6.chunk.js.map",
+  "runtime~main.js": "/QRCoderReaderTest/qrcodereader/build/index.html/static/js/runtime~main.588039d3.js",
+  "runtime~main.js.map": "/QRCoderReaderTest/qrcodereader/build/index.html/static/js/runtime~main.588039d3.js.map",
+  "static/media/logo.svg": "/QRCoderReaderTest/qrcodereader/build/index.html/static/media/logo.5d5d9eef.svg",
+  "static/css/main.e83e23b9.chunk.css.map": "/QRCoderReaderTest/qrcodereader/build/index.html/static/css/main.e83e23b9.chunk.css.map",
+  "index.html": "/QRCoderReaderTest/qrcodereader/build/index.html/index.html",
+  "precache-manifest.571bf05b89e981337919feee7e2aa911.js": "/QRCoderReaderTest/qrcodereader/build/index.html/precache-manifest.571bf05b89e981337919feee7e2aa911.js",
+  "service-worker.js": "/QRCoderReaderTest/qrcodereader/build/index.html/service-worker.js"
 }
