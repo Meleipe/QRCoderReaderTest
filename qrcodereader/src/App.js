@@ -9,11 +9,13 @@ class App extends Component {
     super(props);
     this.state = {
       result: 'Nothing yet',
-      done: false
+      done: false,
+      facingMode: 'rear'
     }
 
-    this.handleScan = this.handleScan.bind(this)
-    this.handleError = this.handleError.bind(this)
+    this.handleScan = this.handleScan.bind(this);
+    this.handleError = this.handleError.bind(this);
+    this.changeFacingMode = this.changeFacingMode.bind(this);
   }
 
   handleError(err) {
@@ -21,40 +23,46 @@ class App extends Component {
   }
 
   handleScan(data) {
-    console.log(data);
-
     if(this.state.done === false && data !== null) {
-        this.setState({result: data});
+      this.setState({result: data});
+      window.location = data;
     }
+
 
     if(data != null) {
       this.setState({done: true})
     }
   }
 
+  changeFacingMode() {
+    this.setState({
+      facingMode: this.state.facingMode === 'front' ? 'rear' : 'front'
+    })
+  }
+
   render() {
+    var btnStyle={
+      marginTop: '50px',
+      marginBottom: '50px',
+      padding: '20px',
+    }
+
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-        <body>
-          <QrReader
-            delay={500}
-            onError={this.handleError}
-            onScan={this.handleScan}
-          />
+        <button onClick={this.changeFacingMode} style={btnStyle}>
+          Change to { this.state.facingMode === 'front' ? 'rear' : 'front' } camera
+        </button>
+        <div>
+          {
+            !this.state.done ?
+              <QrReader
+                delay={500}
+                onError={this.handleError}
+                onScan={this.handleScan}
+                facingMode={this.state.facingMode}
+              />
+              : null
+          }
           <p>
             <a href={this.state.result}>
               {
@@ -62,7 +70,7 @@ class App extends Component {
               }
             </a>
           </p>
-        </body>
+        </div>
       </div>
     );
   }
